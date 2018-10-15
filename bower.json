@@ -1,0 +1,27 @@
+{
+  "name": "novaitalia",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Luis Fernando <serraluisfernando@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lu045/hotsite-nova-italia",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.1.3",
+    "breakpoint": "^4.6.4",
+    "breakpoint-sass": "^2.7.1",
+    "flexbox": "*",
+    "sass-flex-mixin": "^1.0.3"
+  },
+  "devDependencies": {}
+}
