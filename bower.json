@@ -21,7 +21,8 @@
     "breakpoint": "^4.6.4",
     "breakpoint-sass": "^2.7.1",
     "flexbox": "*",
-    "sass-flex-mixin": "^1.0.3"
+    "sass-flex-mixin": "^1.0.3",
+    "bootstrap-sass": "^3.3.7"
   },
   "devDependencies": {}
 }
