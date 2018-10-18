@@ -1,0 +1,40 @@
+/*Arquivo dos mixins utilizados nos estilos das paginas*/
+/* ======== Cores ========*/
+/*Gerais*/
+$vermelho: #ED212D
+$verde: #007F36
+$laranja: #F27123
+$preto: #000
+$preto-italico: #323032
+$branco: #fff
+
+/*Media Queries*/
+/*========Resolução======== */
+$smartv: max-width 2560px
+$desktop-wide: max-width 1440px
+$desktop: max-width 1280px
+$ipad-pro: max-width 1336px
+$tablet-landscape: max-width 1024px
+$tablet: max-width 960px
+$smartphone-landscape-1: max-width 800px
+$smartphone-landscape-2: max-width 768px
+$smartphone-landscape-3: max-width 640px
+$smartphone-landscape-4: max-width 480px
+$smartphone-l: max-width 425px
+$smartphone-m: max-width 375px
+$smartphone-s: max-width 320px
+
+/*========Flexbox========*/
+=flexbox
+  display: -webkit-box
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flexbox
+  display: flex
+
+/*========Colunas========*/
+=columns($count: 3, $gap: 10) 
+  @include css3-prefix('column-count', $count)
+  @include css3-prefix('column-gap', $gap)
+
+
