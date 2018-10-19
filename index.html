@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/geral.css">
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
 	
 </head>
 <body>
@@ -74,8 +75,7 @@
  	 	 	                 <iframe width="560" height="315" src="https://www.youtube.com/embed/McSOc6TpPoE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  	 	 	             </div>
  	 	 	         </div>
-
- 	 	 	              <!--Artigo descritivo-->
+ 	 	 	         <!--Artigo descritivo-->
  	 	             <article>
  	 	 	             <h1>Piacere de Vivere Qui</h1>
  	 	 	             <p>Conheça o Condomínio Nova Itália, um lugar clássico e moderno ao mesmo tempo, a onde todas as tradições típicas da cultura italiana se encontram em um espaço aconchegante, preparado para que você e sua família possam ter cada vez mais tranquilidade, comodidade e segurança.</p>	 	 	
@@ -165,12 +165,14 @@
  	 	     <div class="container">
 	 	         <div class="conteudo-geral">
 	 	             <!--Imagem da Área de Lazer-->
- 	 	             <div class="provi">Espaço reservado a conteudo</div>
+ 	 	             <div class="lazer-area"><i class="far fa-image"></i></div>
  	 	 
  	 	         <!--Artigo sobre a área de lazer-->
- 	 	             <p>Para que você aproveite o melhor da vida junto de seus familiares e amigos, o condomínio possui uma ampla área de lazer equipada com tudo que há de melhor para você.</p>
+ 	 	             <div class="desclal">
+ 	 	                 <p>Para que você aproveite o melhor da vida junto de seus familiares e amigos, o condomínio possui uma ampla área de lazer equipada com tudo que há de melhor para você.</p>
+ 	 	             </div>
  	 	         <!--Galeria de Slide-->
- 	 	             <div class="slide">Area reservada para a galeria de slide</div>
+ 	 	             <div class="slider"><i class="far fa-image"></i></div>
  	 	         </div>
  	 	     </div>
  	     </section>
@@ -187,13 +189,18 @@
  	 	     </div>
 
  	 	     <!--Mapa do Google-->
- 	 	     <div class="mapa">Espaço reservado para o mapa de localização do Google</div>
+	 	 	     <div id="map"></div>
+
+	 	 	     <!--Scripts do Mapa-->
+	 	 	     <script type="text/javascript" src="js/mapa.js"></script>
+	 	 	     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY2AsV7LjkOWuG7Fbqez9ASh-clDO1B9I&callback=initMap">
+                 </script>
 
  	 	     <!--Artigo sobre a localização-->
  	 	     <div class="container">
  	 	         <article>
- 	 	 	         <p>O Condomínio Nova Itália possui uma localização privilegiada, estando próximo ao restaurante Peixada do Lago, entre as cidades de Pedreira e Amparo, no Km 54 da Rodovia João Beira (SP-95), principal estrada de ligação ao Circuito das Águas Paulista e as principais cidades da Região Metropolitana de Campinas (RMC).</p>
- 	 	 	         <p>Bem próximo ao empreendimento se encontram também as obras das futuras barragems do Rio Jaguari e Rio Camanducaia.</p>	 	 	
+ 	 	 	         <p class="p1">O Condomínio Nova Itália possui uma localização privilegiada, estando próximo ao restaurante Peixada do Lago, entre as cidades de Pedreira e Amparo, no Km 54 da Rodovia João Beira (SP-95), principal estrada de ligação ao Circuito das Águas Paulista e as principais cidades da Região Metropolitana de Campinas (RMC).</p>
+ 	 	 	         <p class="p2">Bem próximo ao empreendimento se encontram também as obras das futuras barragems do Rio Jaguari e Rio Camanducaia.</p>	 	 	
  	 	         </article>
  	 	     </div>
  	     </section>
@@ -207,7 +214,7 @@
  	 	 	     <div class="conteudo-geral">
  	 	 	         <div class="container">
  	 	 	 	         <h1>Moderno e classico ao mesmo tempo, assim é o Condomínio Nova Itália</h1>
- 	 	 	 	         <div class="actdes">Espaço Reservado para Imagem</div>
+ 	 	 	 	         <div class="lazer-area"><i class="far fa-image"></i></div>
  	 	 	 	         <p>Venha morar com mais segurança e qualidade de vida, venha para o Condomínio Nova Itália, o mais novo lançamento da Terroá Empreendimentos.</p>
  	 	 	         </div>
  	 	 	     </div>
@@ -247,35 +254,47 @@
  	 <footer>
  	 	 <div class="container">
  	 	 	 <!--Assinatura-->
- 	 	 	 <div class="realizacao">
- 	 	 	 	 <h2>Realização</h2>
- 	 	 	 	 <img src="imagens/logo-terroa.svg">
- 	 	 	 	 <p>CRECI: J23369</p>
+ 	 	 	 <div class="row">
+ 	 	 	     <div class="col-sm-3">
+ 	 	 	         <div class="realizacao">
+ 	 	 	 	         <h2>Realização</h2>
+ 	 	 	 	         <a href="http://www.terroaempreendimentos.com.br">
+ 	 	 	 	             <img src="imagens/logo-terroa.svg">
+ 	 	 	 	         </a>
+ 	 	 	 	         <p>CRECI: J23369</p>
+ 	 	 	         </div>
+ 	 	 	     </div>
  	 	 	 </div>
 
- 	 	 	 <!--Telefones de contato-->
- 	 	 	 <div class="contato">
- 	 	 	 	 <div class="telefone">
- 	 	 	 	 	 <img src="imagens/phone.png" alt="Telefone">
- 	 	 	 	 	 (19)3896-1198
- 	 	 	 	 </div>
+ 	 	 	 <div class="infotercom">
+ 	 	 	     <!--Telefones de contato-->
+ 	 	 	     <div class="row">
+ 	 	 	 	     <div class="col-sm-8">
+ 	 	 	             <div class="contato">
+ 	 	 	 	             <div class="telefone">
+ 	 	 	 	 	             <img src="imagens/phone.png" alt="Telefone">
+ 	 	 	 	 	             <p>(19) 3896-1198</p>
+ 	 	 	 	             </div>
 
- 	 	 	 	 <div class="cel">
- 	 	 	 	 	 <img src="imagens/whats.png" alt="WhatsApp">
- 	 	 	 	 	 (19)99870-1675
- 	 	 	 	 </div>
- 	 	 	 </div>
+ 	 	 	 	             <div class="cel">
+ 	 	 	 	 	             <img src="imagens/whats.png" alt="WhatsApp">
+ 	 	 	 	 	             <p>(19) 99870-1675</p>
+ 	 	 	 	             </div>
+ 	 	 	             </div>
+ 	 	 	         </div>
+ 	 	 	     </div>
 
- 	 	 	 <!--Registro de incorporação-->
- 	 	 	 <div class="incorporacao">
- 	 	 	 	<p>Incorporação registrada no R. 00, da Matrícula nº 0.000, do Oficial Registro de Imóveis da Comarca de Pedreira-SP.</p>
- 	 	 	 	<p>Projeto aprovado pela Prefeitura Municipal de Pedreira sob nº 000/2017. </p>
- 	 	 	 	<p>Aprovado no GRAPROHAB, Certificado n. 160/2017 </p>
- 	 	 	 </div>
+ 	 	 	     <!--Registro de incorporação-->
+ 	 	 	     <div class="incorporacao">
+ 	 	 	 	     <p>Incorporação registrada no R. 00, da Matrícula nº 0.000, do Oficial Registro de Imóveis da Comarca de Pedreira-SP.</p>
+ 	 	 	 	     <p>Projeto aprovado pela Prefeitura Municipal de Pedreira sob nº 000/2017. </p>
+ 	 	 	 	     <p>Aprovado no GRAPROHAB, Certificado n. 160/2017 </p>
+ 	 	 	     </div>
 
- 	 	 	 <!--Direitos Autorais-->
- 	 	 	 <div class="copyright">
- 	 	 	 	<p>2018 - Condomínio Nova Itália - Todos os direitos reservados</p>
+ 	 	 	     <!--Direitos Autorais-->
+ 	 	 	     <div class="copyright">
+ 	 	 	 	     <p>2018 - Condomínio Nova Itália - Todos os direitos reservados</p>
+ 	 	 	     </div>
  	 	 	 </div>
  	 	 </div>
  	 </footer>
