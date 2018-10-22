@@ -5,16 +5,146 @@ footer
 	+flexbox
 	+clearfix
 	padding-top: 5px
+
+	+breakpoint($desktop-med)
+		height: 412px
+
+	.normal
+		display: inline
+		+breakpoint($desktop-med)
+			display: none
+
+	.responsive
+		display: none
+		flex-direction: column
+	    justify-content: center
+	    align-items: center
+
+		+breakpoint($desktop-med)
+			+flexbox
+
+		.contato-resp
+			+flexbox
+			justify-content: center
+			align-items: center
+			flex-direction: column
+
+			.telefone-resp
+
+				p
+					font-family: Open Sans
+					font-size: 23px
+					color: $branco
+					margin-left: 10px
+					margin-top: -6px
+
+
+			
+
+			
+
+				
+				
+
+
+
+				img
+					width: 30px
+					height: 30px
+
+
+				+flexbox
+				flex-direction: row
+
+			.cel-resp
+
+				p
+					font-family: Open Sans
+					font-size: 23px
+					color: $branco
+					margin-left: 10px
+					margin-top: -6px
+
+				img
+					width: 30px
+					height: 30px
+				
+
+				+flexbox
+				flex-direction: row
+
+
+			
+
+		.realizacao-resp
+			+flexbox
+			justify-content: center
+			align-items: center
+			flex-direction: column
+
+			.pontdes
+				margin-top: 6px
+				
+			img				
+				width: 201px
+				height: 87px
+
+			p
+				font-size: 14px
+				color: $branco
+				font-family: Open Sans
+				text-transform: uppercase
+			    text-align: center
+			   
+			h2
+
+				font-size: 21px
+				font-family: Open Sans
+				color: $branco
+			    text-align: center
+
+
+
+
+
+
+
+
+
+
+
+		   
+		    	
+
+		
+
+		   
+
+
+		
+		
+
+			
+	
+
+
+	
+
+
+
 	
 
 	.infotercom
 		margin-top: -10px
+
+	
 
 
 
 	.realizacao
 		+flexbox
 		flex-direction: column
+		
 		postinon: relative
 		justify-content: center
 		align-items: center

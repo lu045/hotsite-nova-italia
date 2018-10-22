@@ -21,16 +21,27 @@
 		text-align: center
 		width: 350px
 		margin-left: -3px
+
+
+		
 		img
 			width: 208px
 			height 261px
+
+			+breakpoint($desktop-med)
+				width: 174px
+				height: 218px
 
 		.de
 			margin-top: 20px
 
 			h2
 				font-size: 40px
-		        position: relative
+				position: relative
+
+				+breakpoint($desktop-med)
+					font-size: 33px
+			
 
 	.dt2
 		+flexbox
@@ -50,14 +61,24 @@
 			margin-top: -70px
 			position: relative
 
+			+breakpoint($desktop-med)
+				width: 201px
+				height: 204px
+				margin-top: -90px
+
 		.de
 			margin-top: 141px
 			position: absolute
 			width: 400px
 
-			h2
+			+breakpoint($desktop-med)
+				margin-top: 120px
+
+			h2				
 				font-size: 40px
 		        position: relative
+				+breakpoint($desktop-med)
+					font-size: 33px
 
 
 	.dt3
@@ -78,13 +99,27 @@
 			position: relative
 			margin-top: -27px
 
+			+breakpoint($desktop-med)
+				margin-top: -56px
+
 		.de
 			margin-top: 117px
 			position: absolute
 
+			+breakpoint($desktop-med)
+				margin-top: 99px
+
 			h2
 				font-size: 40px
 		        position: relative
+
+				+breakpoint($desktop-med)
+					font-size: 33px
+
+			
+				
+
+
 
 .botoes-urbcom
 	+flexbox

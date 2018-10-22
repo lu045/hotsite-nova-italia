@@ -4,6 +4,10 @@
 	article
 		margin-top: -331px
 		width: 520px
+		
+		+breakpoint($desktop-med)
+			width: 100%
+			margin-top: 0
 
 		h1
 			font-family: Hero
@@ -19,10 +23,18 @@
 			text-align: justify
 
 	.vl
+		+breakpoint($desktop-med)
+			+flexbox
+			justify-content: center
+			align-items: center
 
 		.normal
 
 			margin-left: 550px
+
+			+breakpoint($desktop-med)
+				margin-left: 0
+
 
 .atributes
 
@@ -42,11 +54,19 @@
 		img 
 			width: 250px
 			height: 237px
+
+			+breakpoint($desktop-med)
+				width: 216px
+				height: 205px
 		
 		
 		h2 
 		    font-size: 43px
 		    margin-top: 20px
+
+		    +breakpoint($desktop-med)
+		    	font-size: 30px
+		    	
 		  
 		   
 			
@@ -62,12 +82,20 @@
 		img 
 			width: 197px
 			height: 235px
+
+			+breakpoint($desktop-med)
+				width: 169px
+				height: 200px
 		
 
 
 		h2 
 		    font-size: 43px
 		    margin-top: 20px
+
+		    +breakpoint($desktop-med)
+		    	font-size: 30px
+		    	
 		    
 		
 	.at3
@@ -82,11 +110,19 @@
 		h2 
 		    font-size: 43px
 		    margin-top: 20px
+
+		    +breakpoint($desktop-med)
+		    	font-size: 30px
+		    	
 		
 
 		img 
 			width: 270px
 			height: 236px
+
+			+breakpoint($desktop-med)
+				width: 218px
+				height: 190px
 		
 
 .area-botao
@@ -115,12 +151,6 @@
 		&:focus
 			outline: none
 
-#map
-	
-	width: 100%
-	height: 509px
-	position: relative
-	margin-top: 5px
 
 
 		   

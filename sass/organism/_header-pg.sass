@@ -1,3 +1,12 @@
+.bg-image
+	
+	img
+		width: 100%
+		height: auto
+		position: relative
+		
+
+
 .principal
 	z-index: 101
 	margin-top: 38px
@@ -5,14 +14,26 @@
 	+clearfix
 
 
+
+
+
 	h1 
-		margin-left: 302px
+		margin-left: 304px
 		color: $branco
 		font-size: 63px
 		font-family: Hero
 		text-transform: uppercase
-		margin-top: -218px
+		margin-top: -212px
 		width: 780px
+
+		+breakpoint($desktop-med)
+			font-size: 44px
+			width: 632px
+			margin-top: -176px
+			margin-left: 302px
+
+		
+
 	
 
 	.logo
@@ -21,13 +42,23 @@
 		height: 263px
 		border-radius: 20px
 		float: left
-		
+
+		+breakpoint($desktop-med)
+			width: 262px
+			height: 262px
+			margin-left: 5px
 		
 		img
 			width: 213px
 			height: 243px
 			margin-top: 12px
 			margin-left: 25px
+
+			+breakpoint($desktop-med)
+				margin-top: 17px
+				margin-left: 30px
+				width: 201px
+				height: 230px
 
 .homepg
 
@@ -39,23 +70,36 @@
 			z-index: 102
 			position: absolute
 			justify-content: space-around
-			margin-left: 275px
-			margin-top: 252px
+			margin-left: 287px
+			margin-top: -47px
+
+			+breakpoint($desktop-med)
+				margin-left: 290px
+				margin-top: -41px
+
 			
 			li
-				font-size: 23px
+				font-size: 20px
+				width: 180px
 				font-family: Hero
+				text-align: center
 				text-transform: uppercase
 				color: $branco
 				cursor: pointer
 				background: $preto-italico
 				border-radius: 8px
 				padding: 8px 
-				margin-left: 25px
+				margin-left: 20px
 				
 				&:hover
 					background: $laranja
-					
+
+				+breakpoint($desktop-med)
+					font-size: 16px
+					margin-left: 10px
+					width: 145px
+
+				
 
 
 
