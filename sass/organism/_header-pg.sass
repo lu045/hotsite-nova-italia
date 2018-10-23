@@ -1,10 +1,26 @@
 .bg-image
+
+	+breakpoint($tablet-landscape)
+		display: none
+
 	
 	img
 		width: 100%
 		height: auto
 		position: relative
-		
+
+.bg-image-resp
+	display: none
+	
+	img 
+		width: 100%
+		height: auto
+		position: relative
+
+	+breakpoint($tablet-landscape)
+		display: block
+
+
 
 
 .principal
@@ -13,9 +29,8 @@
 	position: absolute
 	+clearfix
 
-
-
-
+	+breakpoint($tablet-landscape)
+		display: none
 
 	h1 
 		margin-left: 304px
@@ -31,9 +46,6 @@
 			width: 632px
 			margin-top: -176px
 			margin-left: 302px
-
-		
-
 	
 
 	.logo
@@ -98,6 +110,76 @@
 					font-size: 16px
 					margin-left: 10px
 					width: 145px
+
+.principal-responsivo
+	display: none
+	position: absolute
+	+clearfix
+	z-index: 101
+	margin-top: 40px
+	margin-left: 71px
+
+	+breakpoint($tablet-landscape)
+		+flexbox
+		justify-content: center
+		align-items: center
+		flex-direction: column
+
+	.logo-resp
+		background: $branco
+		width: 280px
+		height: 280px
+		border-radius: 20px
+		float: none
+		margin-left: 190px
+		position: relative
+
+		img
+			width: 230px
+			height: 263px
+			margin-left: 25px
+			margin-top: 10px
+
+	
+
+
+	h1
+		margin-left: 0
+		color: $branco
+		text-transform: uppercase
+		font-family: Hero
+		font-size: 28px
+		width: 390px
+		text-align: center
+		margin-left: 198px
+		position: relative
+		margin-top: 15px
+
+
+
+
+	.menu-est-resp
+
+		nav
+			ul
+				margin-left: 0
+				margin-top: 0
+				float: none
+				+flexbox
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				
+				li
+					margin-left: 0
+					margin-top: 10px
+					font-size: 20px
+					width: 210px
+
+
+
+	
+
 
 				
 
