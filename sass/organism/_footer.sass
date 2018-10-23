@@ -7,7 +7,7 @@ footer
 	padding-top: 5px
 
 	+breakpoint($desktop-med)
-		height: 412px
+		height: 380px
 
 	.normal
 		display: inline
@@ -23,6 +23,33 @@ footer
 		+breakpoint($desktop-med)
 			+flexbox
 
+		.copyright-resp
+			position: relative
+
+			p 
+				color: $branco
+				font-family: Open Sans
+				font-size: 12px
+				text-align: center
+
+
+
+		.incorporacao-resp
+			position: relative
+			
+			.p1i
+				margin-top: -15px
+
+			.p2i
+				margin-top: -15px
+
+			p
+				color: $branco
+				font-family: Open Sans
+				font-size: 14px
+				text-align: center
+
+			    
 		.contato-resp
 			+flexbox
 			justify-content: center
@@ -38,19 +65,10 @@ footer
 					margin-left: 10px
 					margin-top: -6px
 
-
-			
-
-			
-
-				
-				
-
-
-
 				img
 					width: 30px
 					height: 30px
+					margin-left: -8px
 
 
 				+flexbox
@@ -68,13 +86,12 @@ footer
 				img
 					width: 30px
 					height: 30px
+					margin-left: 2px
 				
 
 				+flexbox
 				flex-direction: row
 
-
-			
 
 		.realizacao-resp
 			+flexbox
@@ -102,6 +119,8 @@ footer
 				font-family: Open Sans
 				color: $branco
 			    text-align: center
+
+
 
 
 
