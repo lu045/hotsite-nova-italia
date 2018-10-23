@@ -16,11 +16,17 @@
 			text-transform: uppercase
 			text-align: justify
 
+			+breakpoint($tablet-2)
+				font-size: 30px
+
 		p 
 			font-size: 25px
 			text-align: justify
 			color: $branco
 			font-family: Open Sans
+
+			+breakpoint($tablet-2)
+				font-size: 23px
 
 	.infovend
 		position: relative
@@ -32,17 +38,26 @@
 		+breakpoint($desktop-med)
 			height: 335px
 
+		+breakpoint($tablet-2)
+			height: 365px
+
 		h1 
 			font-family: Open Sans
 			font-size: 25px
 			color $preto-italico
 			font-weight: bold
 
+			+breakpoint($tablet-2)
+				font-size: 23px
+
 		p 
 			font-family: Open Sans
 			font-size: 25px
 			color: $branco
 			margin-top: -5px
+
+			+breakpoint($tablet-2)
+				font-size: 23px
 
 
 		form
@@ -121,6 +136,9 @@
 				+breakpoint($desktop-med)
 					width: 100%
 					float: none
+
+				+breakpoint($tablet-2)
+					font-size: 30px
 
 
 

@@ -125,6 +125,12 @@
 		align-items: center
 		flex-direction: column
 
+	+breakpoint($tablet-2)
+		margin-left: -48px
+
+	+breakpoint($tablet)
+		margin-left: -21px
+
 	.logo-resp
 		background: $branco
 		width: 280px
@@ -134,11 +140,20 @@
 		margin-left: 190px
 		position: relative
 
+		+breakpoint($tablet)
+			width: 240px
+			height: 240px
+
 		img
 			width: 230px
 			height: 263px
 			margin-left: 25px
 			margin-top: 10px
+
+			+breakpoint($tablet)
+				width: 195px
+				height: 223px
+				margin-left: 24px
 
 	
 
@@ -154,6 +169,10 @@
 		margin-left: 198px
 		position: relative
 		margin-top: 15px
+
+		+breakpoint($tablet)
+			font-size: 25px
+			width: 340px
 
 
 
@@ -175,6 +194,9 @@
 					margin-top: 10px
 					font-size: 20px
 					width: 210px
+
+					+breakpoint($tablet)
+						width: 180px
 
 
 
