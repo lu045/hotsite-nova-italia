@@ -1,3 +1,7 @@
+
+
+
+
 .condominio-desc
 	position: relative
 
@@ -19,6 +23,9 @@
 			+breakpoint($tablet-2)
 				font-size: 30px
 
+			+breakpoint($smartphone-landscape-3)
+				font-size: 25px
+
 		p 
 			font-family: Open Sans
 			color: $preto 
@@ -31,6 +38,9 @@
 			+breakpoint($tablet-2)
 				font-size: 23px
 
+			+breakpoint($smartphone-landscape-3)
+				font-size: 20px
+
 	.vl
 		+breakpoint($desktop-med)
 			+flexbox
@@ -39,10 +49,20 @@
 
 		.normal
 
+			iframe
+				width: 560px
+				height: 315px
+
+				+breakpoint($desktop-med)
+					width: 100%
+					
+
 			margin-left: 550px
 
 			+breakpoint($desktop-med)
 				margin-left: 0
+				width: 100%
+
 
 .atributes
 
@@ -59,6 +79,9 @@
 		text-align: center
 		align-items: center
 
+		+breakpoint($smartphone-landscape-3)
+			margin-left: -40px
+
 		img 
 			width: 250px
 			height: 237px
@@ -66,6 +89,10 @@
 			+breakpoint($desktop-med)
 				width: 216px
 				height: 205px
+
+			+breakpoint($smartphone-landscape-3)
+				width: 131px
+				height: 125px
 		
 		
 		h2 
@@ -77,6 +104,10 @@
 
 		    +breakpoint($tablet-2)
 		    	font-size: 28px
+
+		    +breakpoint($smartphone-landscape-3)
+		    	font-size: 20px
+		    	width: 200px
 		    	
 		  
 		   
@@ -90,6 +121,9 @@
 		text-align: center
 		align-items: center
 
+		+breakpoint($smartphone-landscape-3)
+			margin-left: 25px
+
 		img 
 			width: 197px
 			height: 235px
@@ -97,9 +131,11 @@
 			+breakpoint($desktop-med)
 				width: 169px
 				height: 200px
-		
 
-
+			+breakpoint($smartphone-landscape-3)
+				width: 103px
+				height: 123px
+               
 		h2 
 		    font-size: 43px
 		    margin-top: 20px
@@ -109,6 +145,9 @@
 
 		    +breakpoint($tablet-2)
 		    	font-size: 28px
+
+		    +breakpoint($smartphone-landscape-3)
+		    	font-size: 20px
 		    	
 		    
 		
@@ -121,6 +160,9 @@
 		text-align: center
 		align-items: center
 
+		+breakpoint($smartphone-landscape-3)
+			margin-left: 60px
+
 		h2 
 		    font-size: 43px
 		    margin-top: 20px
@@ -130,6 +172,9 @@
 
 		    +breakpoint($tablet-2)
 		    	font-size: 28px
+
+		    +breakpoint($smartphone-landscape-3)
+		    	font-size: 20px
 		    	
 		
 
@@ -140,6 +185,10 @@
 			+breakpoint($desktop-med)
 				width: 218px
 				height: 190px
+
+			+breakpoint($smartphone-landscape-3)
+				width: 138px
+				height: 120px
 		
 
 .area-botao
@@ -160,6 +209,12 @@
 		font-size: 28px
 		text-transform: uppercase
 		cursor: pointer
+
+		+breakpoint($smartphone-landscape-3)
+			width: 210px
+			height: 50px
+			border-radius: 10px
+			font-size: 20px
 
 		&:hover
 			background: $laranja
