@@ -1,0 +1,62 @@
+@import molecules/mixins
+
+.atributos-emp
+	+flexbox
+	align-items: baseline
+	justify-content: baseline
+	flex-wrap: wrap
+
+	+breakpoint($smartphone-landscape-4)
+		flex-direction: column
+
+	.a-item-1
+		+flexbox
+		align-items: center
+		flex-direction: column
+		justify-content: center
+
+		img
+			width: 250px
+			height: 250px		
+		h2
+			text-align: center
+			font-size: 31px
+			font-family: Open Sans
+			color: $laranja
+			text-align: center
+			text-transform: uppercase
+
+	.a-item-2
+		+flexbox
+		align-items: center
+		flex-direction: column
+		justify-content: center
+
+		img
+			width: 250px
+			height: 250px		
+		h2
+			text-align: center
+			font-size: 31px
+			font-family: Open Sans
+			color: $verde
+			text-align: center
+			text-transform: uppercase
+
+	.a-item-3
+		+flexbox
+		align-items: center
+		flex-direction: column
+		justify-content: center
+
+		img
+			width: 250px
+			height: 250px		
+		h2
+			text-align: center
+			font-size: 31px
+			font-family: Open Sans
+			color: $vermelho
+			text-align: center
+			text-transform: uppercase
+
