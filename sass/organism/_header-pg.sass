@@ -28,6 +28,9 @@
 .bg-image-resp-2
 	display: none
 
+	+breakpoint($smartphone-landscape-s)
+		margin-top: 150px
+
 	img
 		width: 100%
 		height: auto
@@ -35,6 +38,33 @@
 
 	+breakpoint($tbs)
 		display: block
+
+	+breakpoint($smartphone-landscape-msa)
+		display: none
+
+.bg-image-resp-3
+	display: none
+
+	+breakpoint($smartphone-landscape-msa)
+		margin-top: -20px
+
+	+breakpoint($smartphone-l)
+		margin-top: 80px
+
+	+breakpoint($smartphone-m)
+		margin-top: 140px
+
+	img
+		width: 100%
+		height: auto
+		position: relative
+
+	+breakpoint($smartphone-landscape-msa)
+		display: block
+
+
+
+
 
 	
 
@@ -158,6 +188,11 @@
 	+breakpoint($smartphone-landscape-2)
 		margin-left: -68px
 
+	+breakpoint($smartphone-landscape-s)
+		margin-left: 1px 
+		margin-top: -150px
+		position: relative
+
 	
 
 	.logo-resp
@@ -177,6 +212,17 @@
 			width: 233px
 			height: 233px
 
+		+breakpoint($smartphone-landscape-s)
+			width: 210px
+			height: 210px
+			position: absolute
+			margin-top: 280px
+			margin-left: 0
+
+		+breakpoint($smartphone-landscape-msa)
+			width: 190px
+			height: 190px
+
 		img
 			width: 230px
 			height: 263px
@@ -191,6 +237,17 @@
 			+breakpoint($smartphone-landscape-3)
 				width: 185px
 				height: 212px
+
+			+breakpoint($smartphone-landscape-s)
+				width: 165px
+				height 182px
+				margin-top: 0
+				position: absolute
+
+			+breakpoint($smartphone-landscape-msa)
+				width: 145px
+				height: 162px
+				margin-top: 15px
 
 
 
@@ -224,6 +281,16 @@
 			width: 250px
 			font-size: 20px
 
+		+breakpoint($smartphone-landscape-s)
+			width: 240px
+			font-size: 18px
+			margin-left: 0
+			margin-top: 420px
+			position: absolute
+
+		+breakpoint($smartphone-landscape-msa)
+			margin-top: 410px
+
 		
 
 
@@ -235,6 +302,16 @@
 
 
 	.menu-est-resp
+
+		position: relative
+
+		+breakpoint($smartphone-landscape-s)
+			margin-top: 445px
+			margin-left: -90px
+			position: absolute
+
+		+breakpoint($smartphone-landscape-msa)
+			margin-top: 435px
 
 		nav
 			ul
@@ -254,6 +331,11 @@
 
 					+breakpoint($tablet)
 						width: 180px
+
+					+breakpoint($smartphone-landscape-s)
+						width: 160px
+						font-size: 18px
+						margin-left: 15px
 
 
 
