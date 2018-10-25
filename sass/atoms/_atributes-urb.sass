@@ -1,10 +1,112 @@
 @import molecules/mixins
 
-.atributos-emp
+.esp-emp
 	+flexbox
 	align-items: baseline
 	justify-content: baseline
 	flex-wrap: wrap
 
-	+breakpoint($smartphone-landscape-4)
+	.e-item-1
+
+		+flexbox
+		align-items: center
 		flex-direction: column
+		justify-content: center
+
+		img
+			width: 250px
+			height: 250px
+
+			+breakpoint($tablet-2)
+				width: 220px
+				height: 220px
+
+			+breakpoint($smartphone-landscape-3)
+				width: 180px
+				height: 180px
+
+		h2
+			text-align: center
+			font-size: 35px
+			font-family: Open Sans
+			color: $vermelho-vinho
+			text-align: center
+			text-transform: uppercase
+
+			+breakpoint($tablet-2)
+				font-size: 28px
+
+			+breakpoint($smartphone-landscape-3)
+				font-size: 20px
+		
+
+	.e-item-2
+
+		+flexbox
+		align-items: center
+		flex-direction: column
+		justify-content: center
+
+		img
+			width: 250px
+			height: 250px
+
+			+breakpoint($tablet-2)
+				width: 220px
+				height: 220px
+
+			+breakpoint($smartphone-landscape-3)
+				width: 180px
+				height: 180px
+
+
+
+		h2
+			text-align: center
+			font-size: 35px
+			font-family: Open Sans
+			color: $verde-claro
+			text-align: center
+			text-transform: uppercase
+
+			+breakpoint($tablet-2)
+				font-size: 28px
+
+			+breakpoint($smartphone-landscape-3)
+				font-size: 20px
+
+	.e-item-3
+
+		+flexbox
+		align-items: center
+		flex-direction: column
+		justify-content: center
+
+		img
+			width: 250px
+			height: 250px
+
+			+breakpoint($tablet-2)
+				width: 220px
+				height: 220px
+
+			+breakpoint($smartphone-landscape-3)
+				width: 180px
+				height: 180px
+
+		h2
+			text-align: center
+			font-size: 35px
+			font-family: Open Sans
+			color: $laranja-claro
+			text-align: center
+			text-transform: uppercase
+
+			+breakpoint($tablet-2)
+				font-size: 28px
+
+			+breakpoint($smartphone-landscape-3)
+				font-size: 20px
+			
+
+
