@@ -14,44 +14,39 @@
 	<link rel="stylesheet" type="text/css" href="css/geral.css">
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/toggle-menu.js"></script>
+	<script type="text/javascript" src="js/scroll-menu.js"></script>
+	<script type="text/javascript" src="js/app-scroll.js"></script>
 	
 </head>
 <body>
- <!--Menu principal-->
- <header>
- 	 <div class="estatico">
- 	 	 <div class="logo-est">
- 	 	 	 <a href="#">
- 	 	 	     <img src="imagens/logo-nova-italia.png" alt="Condomínio Nova Itália">
- 	 	 	 </a>
- 	 	 </div>
+ <!--Menu Estatico-->
+ <div class="menu-responsivo">
+ 	 <!--Logo-->
+ 	 <a href="index.html">
+ 	     <img src="imagens/logo-nova-italia.png" alt="Condomínio Nova Itália">
+ 	 </a>
 
- 	 	 <div class="decsite">
- 	 	 	 <h1>Condomínio Nova Itália</h1>
- 	 	 </div>
+ 	 <!--Texto-->
+ 	 <h1>Condomínio Nova Itália</h1>
 
- 	 	 <div class="menu-responsivo">
- 	 	 	 <button class="toggle">
- 	 	 	 	 <div class="tgb">
- 	 	 	 	 	 <div class="b1"></div>
- 	 	 	 	 	 <div class="b2"></div>
- 	 	 	 	 	 <div class="b3"></div>
- 	 	 	 	 </div> 	 	 	 	
- 	 	 	 </button>
+ 	 <!--Botão de Menu-->
+ 	 <button class="respbot">
+ 	 	 <div class="tg"></div>
+ 	 	 <div class="tg"></div>
+ 	 	 <div class="tg"></div>
+ 	 </button>
+ </div>
 
- 	 	 	 <div class="responsive">
- 	 	 	 	 <ul>
- 	 	 	 	     <li class="cond">O Condomínio</li>
-	         	     <li class="urb">Urbanistico</li>
-	         	     <li class="al">Área de Lazer</li>
-	         	     <li class="loc">Localização</li> 	 	 	
- 	 	 	     </ul>
- 	 	 	 </div> 	 	 	 
- 	 	 </div>
-
- 	 </div>	
- </header>
-
+ <!--Menu Toggle-->
+ <div class="menu-toggle">
+ 	 <ul>
+ 	 	 <a href="#condominio"><li>O Condomínio</li></a>
+	     <a href="#urbanistico"><li>Urbanistico</li></a>
+	     <a href="#area-lazer"><li>Área de Lazer</li></a>
+	     <a href="#localizacao"><li>Localização</li></a>
+ 	 </ul>
+ </div>
 
  <!--Conteudo do site-->
  <main>
@@ -62,7 +57,7 @@
 	         <!--Responsivo-->
 	         <div class="principal-responsivo">
 	         	 <div class="logo-resp">
-	         	 	 <a href="#">
+	         	 	 <a href="index.html">
 	         	 	     <img src="imagens/novaitalia.svg" alt="Logo Nova Itália">
 	         	 	 </a>
 	         	 </div>
@@ -74,10 +69,10 @@
 	         	 <div class="menu-est-resp">
 	         	 	 <nav>
 	         	 	 	 <ul>
-	         	 	 	 	<li class="cond">O Condomínio</li>
-	         	 	 	 	<li class="urb">Urbanistico</li>
-	         	 	 	 	<li class="al">Área de Lazer</li>
-	         	 	 	 	<li class="loc">Localização</li>
+	         	 	 	 	<a href="#condominio"><li>O Condomínio</li></a>
+	         	 	 	 	<a href="#urbanistico"><li>Urbanistico</li></a>
+	         	 	 	 	<a href="#area-lazer"><li>Área de Lazer</li></a>
+	         	 	 	 	<a href="#localizacao"><li>Localização</li></a>
 	         	 	 	 </ul>
 	         	 	 </nav>
 	         	 </div>
@@ -89,7 +84,7 @@
 	         <div class="principal">
 		         <div class="row">
 		         	 <div class="col-sm-3">
-		                 <a href="#">
+		                 <a href="index.html">
 		                     <div class="logo">
 		 	                     <img src="imagens/novaitalia.svg" alt="Logo Nova Itália">
 		                     </div>
@@ -109,10 +104,10 @@
 	             <!--Navegação-->
 	             <nav>
 		             <ul>
-		 	             <li class="cond">O Condomínio</li>
-		 	             <li class="urb">Urbanistico</li>
-		 	             <li class="al">Área de Lazer</li>
-		 	             <li class="loc">Localização</li>
+		 	             <a href="#condominio"><li>O Condomínio</li></a>
+		 	             <a href="#urbanistico"><li>Urbanistico</li></a>
+		 	             <a href="#area-lazer"><li>Área de Lazer</li></a>
+		 	             <a href="#localizacao"><li>Localização</li></a>
 		             </ul>
 	             </nav>	
 	         </div>
@@ -128,7 +123,7 @@
  	 </div>
  	 
  	  <!--Area com informaçoes do condomínio-->
- 	 <section class="condominio">
+ 	 <section class="condominio" id="condominio">
  	 	 <!--Cabeçalho de sessão-->
  	 	 <div class="cb1">
  	 	 	 <div class="container">
@@ -142,7 +137,8 @@
  	 	         <div class="condominio-desc">	 	            
  	 	             <div class="vl">
  	 	 	             <div class="normal">
- 	 	 	                 <iframe src="https://www.youtube.com/embed/eqke0GacFDY?start=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ 	 	 	             	 <iframe src="https://www.youtube.com/embed/eqke0GacFDY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ 	 	 	                 
  	 	 	             </div>
  	 	 	         </div>
  	 	 	         <!--Artigo descritivo-->
@@ -187,7 +183,7 @@
  	 
  	 <div class="altura-geral">
  	     <!--Area com o urbanistico do condomínio-->
- 	     <section class="urbanistico">
+ 	     <section class="urbanistico" id="urbanistico">
  	 	     <!--Cabeçalho de sessão-->
  	 	     <div class="cb2">
  	 	 	     <div class="container">
@@ -247,7 +243,7 @@
 
  	 <div class="altura-geral">
  	     <!--Area de lazer condomínio-->
- 	     <section class="area-de-lazer">
+ 	     <section class="area-de-lazer" id="area-lazer">
  	 	     <!--Cabeçalho de sessão-->
  	 	     <div class="cb1">
  	 	 	     <div class="container">
@@ -273,7 +269,7 @@
 
  	 <div class="altura-geral">
  	     <!--Area de localização do condomínio-->
- 	     <section class="localizacao">
+ 	     <section class="localizacao" id="localizacao">
  	 	     <!--Cabeçalho de sessão-->
  	 	     <div class="cb2">
  	 	 	     <div class="container">

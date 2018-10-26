@@ -1,0 +1,42 @@
+.menu-toggle
+	z-index: 102
+	position: fixed
+	margin-top: 110px
+	width: 100%
+	+flexbox
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+	+breakpoint($smartphone-landscape-2)
+		margin-top: 100px
+	
+	
+	ul
+		background: $laranja
+		width: 100%
+		text-align: center
+		display: none
+
+		&.active
+			display: block
+
+		li
+			font-family: Hero
+			font-size: 33px
+			text-transform: uppercase
+			color: $branco
+			border-bottom: 2px solid $branco
+
+			+breakpoint($smartphone-landscape-4)
+				font-size: 30px
+
+			+breakpoint($smartphone-landscape-2)
+				font-size: 25px
+
+			+breakpoint($smartphone-landscape-s)
+				font-size: 23px
+
+			&:hover
+				background: $verde
+
