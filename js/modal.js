@@ -24,6 +24,6 @@ $(document).ready(function(){
 $(window).on('load', function(){
 	$('.mod-vend')
 		.hide()
-		.delay('10000')
+		.delay('12000')
 		.fadeIn("slow");
 });
