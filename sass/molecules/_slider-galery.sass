@@ -1,0 +1,115 @@
+.slider
+  background: $preto
+  width: 100%
+  height: 570px
+  position: relative
+  overflow: hidden
+
+  .pager
+   width: 100%
+   height: 125px
+   position: absolute
+ 
+
+   ul
+     +flexbox
+     flex-direction: row
+
+     li 
+       position: relative
+       cursor: pointer
+       opacity: 0.7
+
+       &.active
+         opacity: 1
+       
+       &:hover
+         opacity: 1
+
+
+
+
+       img
+         width: 222px
+         height: auto
+
+
+  
+  .central
+   +flexbox
+   flex-direction:: row
+   
+   .display
+     
+     img
+       width: 100%
+       height: auto
+
+   .botoes
+     +flexbox
+
+     i 
+       font-size: 40px
+       color: $branco
+     .prev
+       background: $preto-italico
+       width: 45px
+       height: 45px
+       +flexbox
+       justify-content: center
+       align-items: center
+       cursor: pointer
+
+     .next
+       background: $preto-italico
+       width: 45px
+       height: 45px
+       +flexbox
+       justify-content: center
+       align-items: center
+       cursor: pointer
+       margin-left: 8px
+
+
+
+
+   .painel
+     background: $verde
+     width: 750px
+     height: 446px
+     position: relative
+     padding: 5px
+     overflow: hidden
+
+
+
+
+     ul
+       width: 100%
+       height: 375px
+       overflow: hidden
+
+       li 
+
+         h2
+           font-family: Hero
+           font-size: 30px
+           color: $branco
+           text-transform: uppercase
+           text-align: left
+
+         p
+           font-family: Open Sans
+           font-size: 28px
+           color: $branco
+           text-align: left
+
+
+
+
+
+
+
+  
+       
+
