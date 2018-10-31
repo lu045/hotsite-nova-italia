@@ -16,9 +16,6 @@
   +breakpoint($smartphone-landscape-s)
      height: 100%
 
-
-
-
   .pager
    width: 100%
    height: 125px
@@ -28,7 +25,6 @@
      position: relative
      height: 100%
  
-
    ul
      +flexbox
      flex-direction: row
@@ -38,12 +34,6 @@
        cursor: pointer
        background: $preto
        
-
-       
-
-
-
-
        img
          width: 222px
          height: auto
@@ -54,8 +44,6 @@
 
          &:hover
            opacity: 1
-
-
 
          +breakpoint($desktop-med)
            width: 232px
@@ -73,10 +61,6 @@
 
          +breakpoint($smartphone-m14)
            width: 115px
-
-
-
-
   
   .central
    +flexbox
@@ -85,8 +69,7 @@
    +breakpoint($tablet-2)
      flex-direction: column
      flex-wrap: wrap
-
-   
+  
    .display
      
      img
@@ -119,8 +102,6 @@
        +breakpoint($smartphone-landscape-3)
          font-size: 30px
 
-
-
      .prev
        background: $preto-italico
        width: 45px
@@ -129,6 +110,13 @@
        justify-content: center
        align-items: center
        cursor: pointer
+       +transition(.5s)
+
+       &:hover
+         background: $branco
+
+         i 
+           color: $preto-italico
 
      .next
        background: $preto-italico
@@ -139,12 +127,16 @@
        align-items: center
        cursor: pointer
        margin-left: 8px
+       +transition(.5s)
+
+       &:hover
+         background: $branco
+
+         i 
+           color: $preto-italico
 
        +breakpoint($smartphone-m14)
          margin-left: 15px
-
-
-
 
    .painel
      background: $verde
@@ -175,12 +167,6 @@
 
      +breakpoint($smartphone-m14)
        height: 300px
-
-
-
-
-
-
 
      ul
        width: 100%
