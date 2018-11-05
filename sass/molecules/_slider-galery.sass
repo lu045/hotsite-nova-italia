@@ -5,7 +5,7 @@
   overflow: hidden
 
   +breakpoint($desktop-med)
-   height: 504px
+   height: 580px
 
   +breakpoint($tablet-2)
    height: 760px
@@ -71,14 +71,27 @@
      flex-wrap: wrap
   
    .display
+     overflow: hidden
+     width: 103%
+     +flexbox
+     height: 370px
+     position: relative 
+
+     +breakpoint($desktop-med)  
+       height: 443px
+       width: 250%
      
+
      img
        width: 100%
-       height: auto
+       height: auto 
 
    .botoes
      margin-top: -5px
      +flexbox
+
+     +breakpoint($desktop-med)
+       margin-top: -5px
 
      +breakpoint($smartphone-landscape-3)
        margin-top: 10px
@@ -141,13 +154,13 @@
    .painel
      background: $verde
      width: 750px
-     height: 446px
+     height: 370px
      position: relative
      padding: 5px
      overflow: hidden
 
      +breakpoint($desktop-med)
-       height: 373px
+       height: 443px
 
      +breakpoint($tablet-2)
        height: 240px
@@ -170,11 +183,11 @@
 
      ul
        width: 100%
-       height: 375px
+       height: 300px
        overflow: hidden
 
        +breakpoint($desktop-med)
-         height: 305px
+         height: 375px
 
        +breakpoint($tablet-2)
          width: 92%
