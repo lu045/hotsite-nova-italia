@@ -1,0 +1,118 @@
+.thumbnail
+	
+	+flexbox
+	width: 100%
+	overflow: hidden
+	background: $preto
+
+	li
+		width: 100%
+		opacity: 0.5
+		cursor: pointer
+		filter: alpha(opacity=50)
+		+transition(.5s)
+
+		&:hover
+			opacity: 1
+			filter: alpha(opacity=1)
+
+		img
+			width: 222px
+			height: auto
+
+.slider
+	position: relative
+	position: relative
+	+clearfix
+		
+	.display
+		+flexbox
+		overflow: hidden
+		width: 100%
+		
+		li 
+			width: 100%
+
+			img
+				width: 1110px
+				height: auto
+
+.description
+	width: 100%
+	background: $verde
+	overflow: hidden
+	height: 290px
+	position: relative
+	padding: 12px
+	margin-top: -16px
+
+	.disc
+		height: 210px
+		overflow: hidden 
+		
+		li
+			
+			h2
+				font-family: Hero
+				font-size: 40px
+				text-transform: uppercase
+				color: $branco
+
+			p
+				font-family: Open Sans
+				font-size: 30px 
+				color: $branco
+				text-transform: justify
+
+	.botoes
+
+		+flexbox
+		justify-content: flex-start
+		margin-top: -30px
+
+		.prev
+			background: $preto-italico
+			width: 60px
+			height: 60px
+			+transition(.5s)
+			+flexbox 
+			justify-content: center
+			align-items: center
+			cursor: pointer
+
+			i 
+				color: $branco
+				font-size: 50px
+
+			&:hover
+
+				background: $branco
+
+				i 
+					color: $preto-italico
+
+		.next
+			background: $preto-italico
+			width: 60px
+			height: 60px
+			margin-left: 15px
+			+transition(.5s)
+			+flexbox 
+			justify-content: center
+			align-items: center
+			cursor: pointer
+
+			i 
+				color: $branco
+				font-size: 50px
+
+			&:hover
+
+				background: $branco
+
+				i 
+					color: $preto-italico
+
+
+
+
