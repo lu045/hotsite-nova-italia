@@ -5,6 +5,9 @@
 	overflow: hidden
 	background: $preto
 
+	+breakpoint($tablet-2)
+		display: none
+
 	li
 		width: 100%
 		opacity: 0.5
@@ -19,6 +22,9 @@
 		img
 			width: 222px
 			height: auto
+
+			+breakpoint($desktop-med)
+				width: 232px
 
 .slider
 	position: relative
@@ -37,6 +43,12 @@
 				width: 1110px
 				height: auto
 
+				+breakpoint($desktop-med)
+					width: 930px
+
+				+breakpoint($tablet-2)
+					width: 690px
+
 .description
 	width: 100%
 	background: $verde
@@ -46,9 +58,23 @@
 	padding: 12px
 	margin-top: -16px
 
+	+breakpoint($desktop-med)
+		height: 340px
+
+	+breakpoint($tablet-2)
+		height: 410px
+
 	.disc
 		height: 210px
 		overflow: hidden 
+
+		+breakpoint($desktop-med)
+			height: 233px
+
+		+breakpoint($tablet-2)
+			height: 270px
+
+
 		
 		li
 			
@@ -58,17 +84,33 @@
 				text-transform: uppercase
 				color: $branco
 
+				+breakpoint($tablet-2)
+					text-align: center
+					font-size: 45px
+
 			p
 				font-family: Open Sans
 				font-size: 30px 
 				color: $branco
 				text-transform: justify
+				+breakpoint($tablet-2)
+					text-align: center
+					font-size: 28px
 
 	.botoes
 
 		+flexbox
 		justify-content: flex-start
 		margin-top: -30px
+
+		+breakpoint($desktop-med)
+			margin-top: 10px
+
+		+breakpoint($tablet-2)
+			justify-content: center
+			margin-top: 0
+
+
 
 		.prev
 			background: $preto-italico
@@ -80,9 +122,16 @@
 			align-items: center
 			cursor: pointer
 
+			+breakpoint($tablet-2)
+				width: 90px
+				height: 90px
+
 			i 
 				color: $branco
 				font-size: 50px
+
+				+breakpoint($tablet-2)
+					font-size: 70px
 
 			&:hover
 
@@ -102,9 +151,16 @@
 			align-items: center
 			cursor: pointer
 
+			+breakpoint($tablet-2)
+				width: 90px
+				height: 90px
+
 			i 
 				color: $branco
 				font-size: 50px
+
+				+breakpoint($tablet-2)
+					font-size: 70px
 
 			&:hover
 
