@@ -52,6 +52,39 @@
 				+breakpoint($smartphone-landscape-3)
 					width: 510px
 
+				+breakpoint($smartphone-landscape-s)
+					width: 545px
+
+				+breakpoint($smartphone-landscape-msgs25)
+					width: 520px
+
+				+breakpoint($smartphone-landscape-msa)
+					width: 490px
+
+				+breakpoint($smartphone-landscape-10)
+					width: 460px
+
+				+breakpoint($smartphone-landscape-ms)
+					width: 418px
+
+				+breakpoint($smartphone-2b)
+					width: 405px
+
+				+breakpoint($smartphone-l2)
+					width: 378px
+
+				+breakpoint($smartphone-m285a)
+					width: 360PX
+
+				+breakpoint($smartphone-m145)
+					width: 335px
+
+				+breakpoint($smartphone-s2b)
+					width: 305px
+
+				+breakpoint($smartphone-s)
+					width: 290px
+
 .description
 	width: 100%
 	background: $verde
@@ -70,6 +103,22 @@
 	+breakpoint($smartphone-landscape-3)
 		height: 490px
 
+	+breakpoint($smartphone-landscape-s)
+		height: 460px
+
+	+breakpoint($smartphone-landscape-msgs25)
+		height: 540px
+
+	+breakpoint($smartphone-landscape-10)
+		height: 510px
+
+	+breakpoint($smartphone-m285a)
+		height: 520px
+
+	+breakpoint($smartphone-s2b)
+		height: 540px
+
+
 
 
 	.disc
@@ -85,6 +134,24 @@
 		+breakpoint($smartphone-landscape-3)
 			height: 350px
 
+		+breakpoint($smartphone-landscape-s)
+			height: 335px
+
+		+breakpoint($smartphone-landscape-msgs25)
+			height: 360px
+
+		+breakpoint($smartphone-landscape-10)
+			height: 320px
+
+		+breakpoint($smartphone-2b)
+			height: 350px
+
+		+breakpoint($smartphone-m285a)
+			height: 380px
+
+		+breakpoint($smartphone-s2b)
+			height: 425px
+
 
 		
 		li
@@ -99,20 +166,27 @@
 					text-align: center
 					font-size: 45px
 
+				+breakpoint($smartphone-landscape-10)
+					font-size: 30px
+
 			p
 				font-family: Open Sans
 				font-size: 30px 
 				color: $branco
 				text-transform: justify
+				
 				+breakpoint($tablet-2)
 					text-align: center
 					font-size: 28px
+
+				+breakpoint($smartphone-landscape-10)
+					font-size: 25px
 
 	.botoes
 
 		+flexbox
 		justify-content: flex-start
-		margin-top: -30px
+		margin-top: -20px
 
 		+breakpoint($desktop-med)
 			margin-top: 10px
@@ -123,6 +197,18 @@
 
 		+breakpoint($smartphone-landscape-3)
 			margin-top: 20px
+
+		+breakpoint($smartphone-landscape-s)
+			margin-top: -20px
+
+		+breakpoint($smartphone-landscape-msgs25)
+			margin-top: 50px
+
+		+breakpoint($smartphone-2b)
+			margin-top: 10px
+
+		+breakpoint($smartphone-s2b)
+			margin-top: -10px
 
 
 
@@ -140,12 +226,18 @@
 				width: 90px
 				height: 90px
 
+			+breakpoint($smartphone-s2b)
+				width: 80px
+				height: 80px
+
 			i 
 				color: $branco
 				font-size: 50px
 
 				+breakpoint($tablet-2)
 					font-size: 70px
+
+				
 
 			&:hover
 
@@ -168,6 +260,10 @@
 			+breakpoint($tablet-2)
 				width: 90px
 				height: 90px
+
+			+breakpoint($smartphone-s2b)
+				width: 80px
+				height: 80px
 
 			i 
 				color: $branco
