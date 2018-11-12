@@ -40,6 +40,38 @@ $(document).ready(function(){
 	 	 $('.disc li:nth-child(5)').fadeIn('slow');
 	 });
 
+	 //Sexta Miniatura
+	 $('.thumbnail li:nth-child(6)').click(function(){
+	 	 $('.display li').hide();
+	 	 $('.display li:nth-child(6)').show();
+	 	 $('.disc li').hide();
+	 	 $('.disc li:nth-child(6)').fadeIn('slow');
+	 });
+
+	 //Setima Miniatura
+	 $('.thumbnail li:nth-child(7)').click(function(){
+	 	 $('.display li').hide();
+	 	 $('.display li:nth-child(7)').show();
+	 	 $('.disc li').hide();
+	 	 $('.disc li:nth-child(7)').fadeIn('slow');
+	 });
+
+	 //Oitava Miniatura
+	 $('.thumbnail li:nth-child(8)').click(function(){
+	 	 $('.display li').hide();
+	 	 $('.display li:nth-child(8)').show();
+	 	 $('.disc li').hide();
+	 	 $('.disc li:nth-child(8)').fadeIn('slow');
+	 });
+
+	 //Nona Miniatura
+	 $('.thumbnail li:nth-child(10)').click(function(){
+	 	 $('.display li').hide();
+	 	 $('.display li:nth-child(10)').show();
+	 	 $('.disc li').hide();
+	 	 $('.disc li:nth-child(10)').fadeIn('slow');
+	 });
+
      //Efeito nos botoes de avanço
      //===========Botão Avançar================//	 
 	 $('.next').click(function(){
@@ -47,7 +79,9 @@ $(document).ready(function(){
 	 	 //===========Variaveis================//
 	 	 var currentSlid = 1;
 	 	 var slidList = $('.display li');
+	 	 var descList = $('.disc li');
 	 	 var numberOflist = (slidList.length);
+	 	 var numberOfdisc = (descList.length);
 	 	 var liWidth = $('.display li').outerWidth();
 	 	 //===========Efeito===================//
 	 	     if (numberOflist>currentSlid){
@@ -60,9 +94,35 @@ $(document).ready(function(){
 	 	 	  }
 
 	 	 //Efeito de avançar descrição
+	
+	 	
+
 
 	 	 //Efeito de desativar miniaturas
-
+         //===========Campo da Descrição================//
+	 	 $('.disc li:nth-child(1)').hide();
+	 	 $('.disc li:nth-child(2)').hide();
+	 	 $('.disc li:nth-child(3)').hide();
+	 	 $('.disc li:nth-child(4)').hide();
+	 	 $('.disc li:nth-child(5)').hide();
+	 	 $('.disc li:nth-child(6)').hide();
+	 	 $('.disc li:nth-child(7)').hide();
+	 	 $('.disc li:nth-child(8)').hide();
+	 	 $('.disc li:nth-child(9)').hide();
+	 	 $('.disc li:nth-child(10)').hide();
+	 	 $('.disc li').show();
+	 	 //===========Campo da Display================//
+	 	 $('.display li:nth-child(1)').hide();
+	 	 $('.display li:nth-child(2)').hide();
+	 	 $('.display li:nth-child(3)').hide();
+	 	 $('.display li:nth-child(4)').hide();
+	 	 $('.display li:nth-child(5)').hide();
+	 	 $('.display li:nth-child(6)').hide();
+	 	 $('.display li:nth-child(7)').hide();
+	 	 $('.display li:nth-child(8)').hide();
+	 	 $('.display li:nth-child(9)').hide();
+	 	 $('.display li:nth-child(10)').hide();
+	 	 $('.display li').show();
 	 });
 
 	 //===========Botão Voltar================//	
@@ -89,6 +149,30 @@ $(document).ready(function(){
 	 	 //Efeito de avançar descrição
 
 	 	 //Efeito de desativar miniaturas
+         //===========Campo da Descrição================//
+	 	 $('.disc li:nth-child(1)').hide();
+	 	 $('.disc li:nth-child(2)').hide();
+	 	 $('.disc li:nth-child(3)').hide();
+	 	 $('.disc li:nth-child(4)').hide();
+	 	 $('.disc li:nth-child(5)').hide();
+	 	 $('.disc li:nth-child(6)').hide();
+	 	 $('.disc li:nth-child(7)').hide();
+	 	 $('.disc li:nth-child(8)').hide();
+	 	 $('.disc li:nth-child(9)').hide();
+	 	 $('.disc li:nth-child(10)').hide();
+	 	 $('.disc li').show();
+	 	 //===========Campo da Display================//
+	 	 $('.display li:nth-child(1)').hide();
+	 	 $('.display li:nth-child(2)').hide();
+	 	 $('.display li:nth-child(3)').hide();
+	 	 $('.display li:nth-child(4)').hide();
+	 	 $('.display li:nth-child(5)').hide();
+	 	 $('.display li:nth-child(6)').hide();
+	 	 $('.display li:nth-child(7)').hide();
+	 	 $('.display li:nth-child(8)').hide();
+	 	 $('.display li:nth-child(9)').hide();
+	 	 $('.display li:nth-child(10)').hide();
+	 	 $('.display li').show();
 
 	 });
 
