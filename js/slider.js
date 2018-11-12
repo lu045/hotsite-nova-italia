@@ -94,6 +94,9 @@ $(document).ready(function(){
 	 	 	  }
 
 	 	 //Efeito de avançar descrição
+         $('.text-order').animate({margintop:-liWidth}, 800, function(){
+
+         });
 	
 	 	
 
