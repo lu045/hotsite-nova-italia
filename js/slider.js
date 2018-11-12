@@ -72,6 +72,8 @@ $(document).ready(function(){
 	 	 $('.text-order li:nth-child(10)').fadeIn('slow');
 	 });
 
+	 //Efeito de avanço nas miniuaturas
+
      
 
      //Efeito nos botoes de avanço
@@ -98,13 +100,12 @@ $(document).ready(function(){
 	 	 	  }
 
 	 	 //Efeito de avançar descrição
-	 	 
-
-	 	
-       
-	 	
-
-
+	 	 if(numberOfdisc>currentSlid){	 	 	
+	 	 	 $('.text-order li').last().after($('.text-order li').first());
+	 	 	 $('.text-order li').fadeIn('slow');
+	 	 }else{
+	 	 	 alert("Insira mais slides para avançar!");
+	 	 }
 	 	 //Efeito de desativar miniaturas
          //===========Campo da Descrição================//
 	 	 $('.text-order li:nth-child(1)').hide();
@@ -138,7 +139,11 @@ $(document).ready(function(){
 	 	 //===========Variaveis================//
 	 	 var currentSlid = 1;
 	 	 var slidList = $('.display li');
+	 	 var descList = $('.text-order li');
+	 	 var actList = $('.text-order .ativo');
 	 	 var numberOflist = (slidList.length);
+	 	 var numberOfdisc = (descList.length);
+	 	 var numberOfact = (actList.length);
 	 	 var liWidth = $('.display li').outerWidth();
 	 	 //===========Efeito===================//
 	 	     if (numberOflist>currentSlid){	 	      	 
@@ -154,10 +159,12 @@ $(document).ready(function(){
 	 	 	  }
 
 	 	 //Efeito de avançar descrição
-
-
-
-
+	 	 if(numberOfdisc>currentSlid){	 	 	
+	 	 	 $('.text-order li').first().before($('.text-order li').last());
+	 	 	 $('.text-order li').fadeIn('slow');
+	 	 }else{
+	 	 	 alert("Insira mais slides para avançar!");
+	 	 }
 
 	 	 //Efeito de desativar miniaturas
          //===========Campo da Descrição================//
