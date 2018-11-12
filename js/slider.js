@@ -98,7 +98,7 @@ $(document).ready(function(){
 	 	 	  }
 
 	 	 //Efeito de avançar descrição
-	 	 $('.text-order li').fadeIn('slow');
+	 	 
 
 	 	
        
