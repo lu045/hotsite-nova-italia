@@ -1,24 +1,3 @@
-/*Miniaturas do Slider*/
-.thumbnail	
-	+flexbox
-	background: $preto
-	position: relative
-
-	/*====Media Queries====*/
-	+breakpoint($tablet-2)
-		display: none
-
-	li
-		cursor: pointer
-			
-		img
-			width: 222px
-			height: auto
-
-			/*====Media Queries====*/
-			+breakpoint($desktop-med)
-				width: 232px
-
 /*Campo total do Slider*/
 .slider
 	position: relative
@@ -26,59 +5,7 @@
 	width: 100%
 	height: auto
 	overflow: hidden
-
-	/*Tela de exibição estatica*/
-	.exibition
-		+flexbox
-		
-		img
-			width: 1110px
-			height: auto
-
-			/*====Media Queries====*/
-			+breakpoint($desktop-med)
-				width: 930px
-
-			+breakpoint($tablet-2)
-				width: 690px
-
-			+breakpoint($smartphone-landscape-3)
-				width: 510px
-
-			+breakpoint($smartphone-landscape-s)
-				width: 545px
-
-			+breakpoint($smartphone-landscape-msgs25)
-				width: 520px
-
-			+breakpoint($smartphone-landscape-msa)
-				width: 490px
-
-			+breakpoint($smartphone-landscape-10)
-				width: 460px
-
-			+breakpoint($smartphone-landscape-ms)
-				width: 418px
-
-			+breakpoint($smartphone-2b)
-				width: 405px
-
-			+breakpoint($smartphone-l2)
-				width: 378px
-
-			+breakpoint($smartphone-m285a)
-				width: 360PX
-
-			+breakpoint($smartphone-m145)
-				width: 335px
-
-			+breakpoint($smartphone-s2b)
-				width: 305px
-
-			+breakpoint($smartphone-s)
-				width: 290px
-
-		
+	
 	/*Area de exibição em listas*/
 	.display
 		+flexbox
@@ -173,39 +100,6 @@
 	+breakpoint($smartphone-s2b)
 		height: 540px
 
-	/*Area de descrição estatica*/
-	.descript-active
-		position: relative
-		h2
-			font-family: Hero
-			font-size: 40px
-			text-transform: uppercase
-			color: $branco
-
-			/*====Media Queries====*/
-			+breakpoint($tablet-2)
-				text-align: center
-				font-size: 45px
-
-			+breakpoint($smartphone-landscape-3)
-				font-size: 40px
-
-			+breakpoint($smartphone-landscape-10)
-				font-size: 30px
-
-		p
-			font-family: Open Sans
-			font-size: 30px 
-			color: $branco
-			text-transform: justify
-				
-			+breakpoint($tablet-2)
-				text-align: center
-				font-size: 28px
-
-			+breakpoint($smartphone-landscape-10)
-				font-size: 25px
-
 	 /*Listas descritivas*/
 	.disc
 		height: 210px
@@ -217,10 +111,10 @@
 			height: 233px
 
 		+breakpoint($tablet-2)
-			height: 270px
+			height: 255px
 
 		+breakpoint($smartphone-landscape-3)
-			height: 350px
+			height: 333px
 
 		+breakpoint($smartphone-landscape-s)
 			height: 333px
