@@ -2,7 +2,12 @@ $(document).ready(function(){
  	 //Efeito de reprodução automatica
  	 //===========Variaveis===================//
  	 var spped = 5500;
- 	 var rotate = setInterval(loopslid, spped);		
+ 	 var rotate = setInterval(loopslid, spped);
+ 	 //Efeito avançar com a mao		
+     
+
+
+
      //Efeito nos botoes de ação
      //===========Botão Avançar====================//	 
 	 $('.next').click(function(){
