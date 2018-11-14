@@ -1,13 +1,12 @@
 $(document).ready(function(){	 
- 	 //Efeito de reprodução automatica	
-
-     
-
-
-
+ 	 //Efeito de reprodução automatica
+ 	 //===========Variaveis===================//
+ 	 var spped = 5500;
+ 	 var rotate = setInterval(loopslid, spped);		
      //Efeito nos botoes de ação
      //===========Botão Avançar====================//	 
 	 $('.next').click(function(){
+	 	 
 	 	 //Efeito de Avanço
 	 	 //===========Variaveis===================//
 	 	 var currentSlid = 1;
@@ -41,6 +40,7 @@ $(document).ready(function(){
 
 	 //===========Botão Voltar===================//	
 	 $('.prev').click(function(){
+	 	
 	 	 //Efeito de Retrocesso
 	 	 //===========Variaveis==================//
 	 	 var currentSlid = 1;
@@ -73,6 +73,11 @@ $(document).ready(function(){
 	 	 }else{
 	 	 	 alert("Insira mais slides para avançar!");
 	 	 }
-	 });	  
+	 });
+
+	 //Função do loop de animação do slider  
+	 function loopslid(){
+	 	$('.next').click();
+	 }
 });
 
