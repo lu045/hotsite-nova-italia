@@ -5,8 +5,6 @@
 	width: 100%
 	height: auto
 	overflow: hidden
-
-
 	
 	/*Area de exibição em listas*/
 	.display
@@ -15,11 +13,13 @@
 		height: auto
 		position: relative
 
+		/*Listas de exibição*/
 		li 
 			
 			left: 0
 			position: relative
 	
+			/*Definiçao das imagens exibidas*/
 			img
 				width: 1110px
 				height: auto
@@ -70,8 +70,7 @@
 /*Area de descrição das listas do Slider*/
 .description
 	width: 100%
-	background: $verde
-	//overflow: hidden
+	background: $verde	
 	height: 280px
 	position: relative
 	padding: 12px
@@ -111,12 +110,7 @@
 	+breakpoint($smartphone-mas25)
 		height: 580px
 
-
-
-
-
-
-	 /*Listas descritivas*/
+	/*Listas descritivas*/
 	.disc 
 		margin-top: 5px
 		position: relative
@@ -129,7 +123,6 @@
 			margin-top: 0
 			position: relative
 			
-
 			/*====Media Queries====*/
 			+breakpoint($desktop-med)
 				margin-top: 5px
@@ -141,14 +134,12 @@
 				margin-top: -70px
 
 			+breakpoint($smartphone-landscape-1025)
-				margin-top: -160px
-
-
-
-		
+				margin-top: -160px		
+ 
+         /*Listas com as descriçoes dos slides*/
 		 li
-			 //z-index: 1
-			
+			 			
+			 /*Titulo de cabaçalho*/
 			 h2
 				 font-family: Hero
 				 font-size: 40px
@@ -179,10 +170,7 @@
 				 +breakpoint($smartphone-landscape-1025)
 				 	 font-size: 30px
 
-
-
-				
-
+			 /*Paragrafo de descrição*/
 			 p
 				 font-family: Open Sans
 				 font-size: 30px 
@@ -209,7 +197,6 @@
 
 				 +breakpoint($smartphone-landscape-1025)
 				 	 font-size: 25px
-
 
 	/*Botoes de ação do Slider*/
 	.botoes
