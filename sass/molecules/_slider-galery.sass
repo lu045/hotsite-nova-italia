@@ -5,6 +5,8 @@
 	width: 100%
 	height: auto
 	overflow: hidden
+
+
 	
 	/*Area de exibição em listas*/
 	.display
@@ -69,7 +71,7 @@
 .description
 	width: 100%
 	background: $verde
-	overflow: hidden
+	//overflow: hidden
 	height: 280px
 	position: relative
 	padding: 12px
@@ -77,78 +79,75 @@
 
 	/*====Media Queries====*/
 	+breakpoint($desktop-med)
-		height: 340px
+		height: 285px
 
 	+breakpoint($tablet-2)
-		height: 410px
+		height: 358px
 
 	+breakpoint($smartphone-landscape-3)
-		height: 490px
+		height: 360px
 
 	+breakpoint($smartphone-landscape-s)
-		height: 460px
+		height: 388px
 
 	+breakpoint($smartphone-landscape-msgs25)
-		height: 540px
+		height: 370px
 
-	+breakpoint($smartphone-landscape-10)
+	+breakpoint($smartphone-landscape-101)
+		height: 363px
+
+	+breakpoint($smartphone-landscape-1025)
+		height: 450px
+
+	+breakpoint($smartphone-landscape-ms354)
+		height: 480px
+
+	+breakpoint($smartphone-l2aart5)
 		height: 510px
 
-	+breakpoint($smartphone-m285a)
-		height: 520px
+	+breakpoint($smartphone-78asuyt)
+		height: 550px
 
-	+breakpoint($smartphone-s2b)
-		height: 540px
+	+breakpoint($smartphone-mas25)
+		height: 580px
+
+
+
+
+
 
 	 /*Listas descritivas*/
-	.disc
-		height: 210px
-		overflow: hidden 
+	.disc 
 		margin-top: 5px
-
-		/*====Media Queries====*/
-		+breakpoint($desktop-med)
-			height: 233px
-
-		+breakpoint($tablet-2)
-			height: 255px
-
-		+breakpoint($smartphone-landscape-3)
-			height: 333px
-
-		+breakpoint($smartphone-landscape-s)
-			height: 333px
-
-		+breakpoint($smartphone-landscape-msgs25)
-			height: 360px
-
-		+breakpoint($smartphone-landscape-10)
-			height: 320px
-
-		+breakpoint($smartphone-2b)
-			height: 350px
-
-		+breakpoint($smartphone-m285a)
-			height: 380px
-
-		+breakpoint($smartphone-s2b)
-			height: 425px
+		position: relative
+		width: 100%
 
 		/*Listas com os textos em ordem*/
 		.text-order
 			position: relative
 			z-index: 100
 			margin-top: 0
+			position: relative
+			
 
 			/*====Media Queries====*/
 			+breakpoint($desktop-med)
 				margin-top: 5px
 
 			+breakpoint($smartphone-landscape-msgs25)
-				margin-top: 10px			
+				margin-top: 10px
+
+			+breakpoint($smartphone-landscape-101)
+				margin-top: -70px
+
+			+breakpoint($smartphone-landscape-1025)
+				margin-top: -160px
+
+
+
 		
 		 li
-			 z-index: 1
+			 //z-index: 1
 			
 			 h2
 				 font-family: Hero
@@ -162,10 +161,27 @@
 					 font-size: 45px
 
 				 +breakpoint($smartphone-landscape-3)
-					 font-size: 40px
-
-				 +breakpoint($smartphone-landscape-10)
 					 font-size: 30px
+
+				 +breakpoint($smartphone-landscape-s)
+					 font-size: 33px
+
+				 +breakpoint($smartphone-landscape-msgs25)
+				 	 font-size: 30px
+
+				 +breakpoint($smartphone-landscape-101)
+				 	 margin-top: 80px
+
+				 +breakpoint($smartphone-landscape-1025)
+				 	 font-size: 40px
+				 	 margin-top: 180px
+
+				 +breakpoint($smartphone-landscape-1025)
+				 	 font-size: 30px
+
+
+
+				
 
 			 p
 				 font-family: Open Sans
@@ -178,8 +194,22 @@
 					 text-align: center
 					 font-size: 28px
 
-				 +breakpoint($smartphone-landscape-10)
+				 +breakpoint($smartphone-landscape-3)
 					 font-size: 25px
+
+				 +breakpoint($smartphone-landscape-s)
+					 font-size: 28px
+
+				 +breakpoint($smartphone-landscape-msgs25)
+				 	 font-size: 25px
+
+				 +breakpoint($smartphone-landscape-1025)
+				 	 font-size: 30px
+				 	 text-align: center
+
+				 +breakpoint($smartphone-landscape-1025)
+				 	 font-size: 25px
+
 
 	/*Botoes de ação do Slider*/
 	.botoes
