@@ -51,6 +51,7 @@
  <?php
  	// Modal de Informações
  	include('includes/organism/modal.php');
+ 	// Menu Estatico
  	include('includes/organism/menu-estatico.php'); 
  ?>
  <!--Conteudo do site-->
