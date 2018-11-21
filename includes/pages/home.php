@@ -1,193 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-bt">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Condomínio Nova Itália | Terroá Empreendimentos</title>
-	<meta http-equiv="content-language" content="pt-br">
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<meta name=”description” content="Um condomínio clássico e moderno ao mesmo tempo, contanto com uma localização privilegiada, segurança e tudo que você deseja para poder viver bem.">
-	<meta name="google-site-verification" content="pNTJZWSlMUTTXruol_G5dJPbZidT_OdG4aDlnBWOiUE">
-	<meta name="copyright" content="© Terroá Empreendimentos">
-	<meta name="robots" content="noindex, nofollow">
-	<meta name="googlebot" content="noindex">
-	<meta name="author" content="Terroá Empreendimentos">
-	<meta http-equiv="cache-control" content="public">
-	<meta property="og:url" content="http://www.novaitalia.com.br">
-	<meta property="og:type" content="website">
-    <meta property="og:title" content="Condomínio Nova Itália">
-    <meta property="og:description" content="Condomínio clássico e moderno ao mesmo tempo, localizado na cidade de Pedreira-SP, contanto com uma localização privilegiada, segurança e tudo que você deseja para poder viver bem.">
-    <meta property="og:image" content="www.novaitalia.com.br/novaitalia.png">
-    <meta property="og:locale" content="pt_br">
-    <meta name="twitter:title" content="Condomínio Nova Itália">
-    <meta name="twitter:csite" content="@terroaemp">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="www.novaitalia.com.br/novaitaliatwit.png">
-    <meta name="twitter:description" content="Condomínio clássico e moderno ao mesmo tempo, localizado na cidade de Pedreira-SP, contanto com uma localização privilegiada, segurança e tudo que você deseja para poder viver bem.">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel=”canonical” href=”http://www.novaitalia.com.br”>
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/geral.css">
-	<link rel="stylesheet" type="text/css" href="css/plugins.css">
-	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126058156-1"></script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-
-     gtag('config', 'UA-126058156-1');
-    </script>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/toggle-menu.js"></script>
-	<script type="text/javascript" src="js/scroll-menu.js"></script>
-	<script type="text/javascript" src="js/app-scroll.js"></script>
-	<script type="text/javascript" src="js/slider.js"></script>
-	<script type="text/javascript" src="js/modal.js"></script>
-</head>
-<body>
- <!--Modal Informações-->
- <div class="mod-vend">
- 	  	 <div class="content-modvend">
- 	     <button class="close-mod">
- 	 	     <div class="cm1"></div>
- 	 	     <div class="cm2"></div>
- 	     </button>
- 	 
- 	     <div class="text-mod">
- 	         <p class="p1m">Quer mais informações?</p>
- 	         <p class="p2m">Preencha o formulario que entraremos em contato com você!</p>
- 	     </div>
-
- 	     <div class="form-modalvend">
- 	     	 <form>
-	 	 	     <label>
- 	 	 	 	     <input class="m1v"  type="text" name="Nome" placeholder="Nome">	 		 	
- 	 	 	     </label>
- 	 	 	     
- 	 	 	     <label>
- 	 	 	 	     <input class="m2v" type="e-mail" name="E-mail" placeholder="E-mail">	 		
- 	 	 	     </label>
- 	 	 	    
- 	 	 	     <label>
- 	 	 	 	     <input class="m3v" type="text" name="Telefone" placeholder="Telefone">	 	
- 	 	 	     </label>
-
- 	 	 	     <button class="envio-mod">Enviar</button>
- 	 	 	 </form>
- 	     </div>
- 	 </div>
- 	 
- 	 <div class="bg-mod"></div>
- </div>
-
+ <?php
+ 	//Capa do Site
+ 	include('includes/organism/capa.php');
+ 	//O Condominio
+    //include('includes/organism/condominio.php');
+ 	//Urbanistico
+    //include('includes/organism/urbanistico.php');
+ 	//Area de Lazer
+    //include('includes/organism/lazer.php');
+ 	//Localização
+    //include('includes/organism/localizacao.php');
+ 	//Informaçoes
+ 	//include('includes/organism/info.php'); 
+ ?>
  
-
- <!--Menu Estatico-->
- <div class="menu-responsivo">
- 	 <!--Logo-->
- 	 <a href="index.html">
- 	     <img src="imagens/logo-nova-italia.png" alt="Condomínio Nova Itália">
- 	 </a>
-
- 	 <!--Texto-->
- 	 <h1>Condomínio Nova Itália</h1>
-
- 	 <!--Botão de Menu-->
- 	 <button class="respbot">
- 	 	 <div class="tg"></div>
- 	 	 <div class="tg"></div>
- 	 	 <div class="tg"></div>
- 	 </button>
- </div>
-
- <!--Menu Toggle-->
- <div class="menu-toggle">
- 	 <ul>
- 	 	 <a href="#condominio"><li>O Condomínio</li></a>
-	     <a href="#urbanistico"><li>Urbanistico</li></a>
-	     <a href="#area-lazer"><li>Área de Lazer</li></a>
-	     <a href="#localizacao"><li>Localização</li></a>
- 	 </ul>
- </div>
-
-
-
- <!--Conteudo do site-->
- <main>
- 	 <!--home do site-->
- 	 <div class="homepg">
-	     <div class="container">
-	         <!--Cabeçalho-->
-	         <!--Responsivo-->
-	         <div class="principal-responsivo">
-	         	 <div class="logo-resp">
-	         	 	 <a href="index.html">
-	         	 	     <img src="imagens/novaitalia.svg" alt="Logo Nova Itália">
-	         	 	 </a>
-	         	 </div>
-
-	         	 
-	         	 <h1>Tudo que você deseja em um só lugar</h1>
-	         	
-
-	         	 <div class="menu-est-resp">
-	         	 	 <nav>
-	         	 	 	 <ul>
-	         	 	 	 	<a href="#condominio"><li>O Condomínio</li></a>
-	         	 	 	 	<a href="#urbanistico"><li>Urbanistico</li></a>
-	         	 	 	 	<a href="#area-lazer"><li>Área de Lazer</li></a>
-	         	 	 	 	<a href="#localizacao"><li>Localização</li></a>
-	         	 	 	 </ul>
-	         	 	 </nav>
-	         	 </div>
-
-	         </div>
-
-	         
-	         <!--Padrão-->
-	         <div class="principal">
-		         <div class="row">
-		         	 <div class="col-sm-3">
-		                 <a href="index.html">
-		                     <div class="logo">
-		 	                     <img src="imagens/novaitalia.svg" alt="Logo Nova Itália">
-		                     </div>
-		                 </a>
-		             </div>
-		         </div>
-
-		         
-
-		         <div class="row">
-		         	 <div class="col-md-12">
-		                 <h1>Tudo que você deseja em um só lugar</h1>
-		             </div>
-		         </div>
-	         
-
-	             <!--Navegação-->
-	             <nav>
-		             <ul>
-		 	             <a href="#condominio"><li>O Condomínio</li></a>
-		 	             <a href="#urbanistico"><li>Urbanistico</li></a>
-		 	             <a href="#area-lazer"><li>Área de Lazer</li></a>
-		 	             <a href="#localizacao"><li>Localização</li></a>
-		             </ul>
-	             </nav>	
-	         </div>
-	         <!---->
-	     </div>
-	     <!--Background-->
-	     <!--Padrão-->
-	     <div class="bg-image"><img src="imagens/capa.png"></div>
-	     <!--Responsivo-->
-	     <div class="bg-image-resp"><img src="imagens/capa-resp.png"></div>
-	     <div class="bg-image-resp-2"><img src="imagens/capa-resp2.png"></div>  
-	     <div class="bg-image-resp-3"><img src="imagens/capa-resp3.png"></div>         
- 	 </div>
  	 
  	  <!--Area com informaçoes do condomínio-->
 
@@ -206,8 +31,7 @@
  	 	         <div class="condominio-desc">	 	            
  	 	             <div class="vl">
  	 	 	             <div class="normal">
- 	 	 	             	 <iframe src="https://www.youtube.com/embed/eqke0GacFDY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
- 	 	 	                 
+ 	 	 	             	 <iframe src="https://www.youtube.com/embed/eqke0GacFDY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>	 	 	                 
  	 	 	             </div>
  	 	 	         </div>
  	 	 	         <!--Artigo descritivo-->
@@ -259,7 +83,6 @@
  	 	 	         <h1>Urbanistico</h1>
  	 	 	     </div>
  	 	     </div>
-
  	 	    
  	 	     <!--Urbanistico-->
  	 	     <div class="conturb">
@@ -268,8 +91,7 @@
  	 	         </a>
  	 	     </div>
 
- 	 	     <div class="container">	 	    
- 	 	          	 	 
+ 	 	     <div class="container">	 	     	 	          	 	 
  	 	         <!--Especificaçoes tecnicas-->
  	 	         <div class="esp-emp">
  	 	             <div class="row">
@@ -296,22 +118,17 @@
  	 	             </div>
  	 	         </div>
  	 	     
- 	 	             
-
- 	 	             <!--Botoes de Download-->
- 	 	             <div class="botoes-urbcom">
- 	 	                 <a href="condominio-nova-italia-urbanistico.pdf" target="_blank">
- 	 	                     <button class="urbbax">Baixar Urbanistico</button>
- 	 	                 </a>
- 	 	                 <a href="condominio-nova-italia-planta.pdf" target="_blank">
- 	 	                     <button class="plabbax">Baixar a Planta</button>
- 	 	                 </a>
- 	 	           
- 	 	     </div>
+ 	 	         <!--Botoes de Download-->
+ 	 	         <div class="botoes-urbcom">
+ 	 	             <a href="condominio-nova-italia-urbanistico.pdf" target="_blank">
+ 	 	                 <button class="urbbax">Baixar Urbanistico</button>
+ 	 	             </a>
+ 	 	             <a href="condominio-nova-italia-planta.pdf" target="_blank">
+ 	 	                 <button class="plabbax">Baixar a Planta</button>
+ 	 	             </a> 	 	           
+ 	 	         </div>
  	     </section>
  	 </div>
-
- 	
 
  	 <div class="altura-geral">
  	     <!--Area de lazer condomínio-->
@@ -456,24 +273,23 @@
  	 	     </div>
 
  	 	     <!--Mapa do Google-->
-	 	 	     <div id="map"></div>
+	 	 	 <div id="map"></div>
 
-	 	 	     <!--Scripts do Mapa-->
-	 	 	     <script type="text/javascript" src="js/mapa.js"></script>
-	 	 	     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY2AsV7LjkOWuG7Fbqez9ASh-clDO1B9I&callback=initMap">
-                 </script>
+	 	 	 <!--Scripts do Mapa-->
+	 	 	 <script type="text/javascript" src="js/mapa.js"></script>
+	 	 	 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY2AsV7LjkOWuG7Fbqez9ASh-clDO1B9I&callback=initMap">
+             </script>
 
  	 	     <!--Artigo sobre a localização-->
  	 	     <div class="container">
  	 	         <article>
  	 	 	         <p class="p1">O Condomínio Nova Itália possui uma localização privilegiada, estando próximo ao restaurante Peixada do Lago, entre as cidades de Pedreira e Amparo, no Km 54 da Rodovia João Beira (SP-95), principal estrada de ligação ao Circuito das Águas Paulista e as principais cidades da Região Metropolitana de Campinas (RMC).</p>
- 	 	 	         <p class="p2">Bem próximo ao empreendimento se encontram também as obras das futuras barragems do Rio Jaguari e Rio Camanducaia.</p>	 	 	
+ 	 	 	         <p class="p2">Bem próximo ao empreendimento se encontram também as obras das futuras barragems do Rio Jaguari e Rio Camanducaia.</p> 
  	 	         </article>
  	 	     </div>
  	     </section>
  	 </div>
-
- 	 
+	 
  	 <!--Vendas e informaçoes do condomínio-->
  	 <section class="informacoes">
  	 	 <!--Artigo informativo-->
@@ -497,10 +313,10 @@
 
  	 	 	 	     <!--Formulario para informaçoes-->
  	 	 	 	     <form>
-
- 	 	 	 	 	     <label>
+	 	 	 	 	     <label>
  	 	 	 	 	 	     <input class="i1c"  type="text" name="Nome" placeholder="Nome">	 	 	 	 	 	
  	 	 	 	 	     </label>
+ 	 	 	 	 	     
  	 	 	 	 	     <label>
  	 	 	 	 	 	     <input class="i2c" type="e-mail" name="E-mail" placeholder="E-mail">	 		
  	 	 	 	 	     </label>
@@ -515,95 +331,3 @@
  	 	 	 </div>
  	 	 </div>		 	
  	 </section>
-
- 	 <!--Rodape-->
- 	 <footer>
- 	 	 <!--Rodape Responsivo-->
- 	 	 <div class="responsive">
- 	 	 	 <div class="container">
- 	 	 	 	 <div class="realizacao-resp">
- 	 	 	 	 	 <h2>Realização</h2>
- 	 	 	 	      <a href="http://www.terroaempreendimentos.com.br">
- 	 	 	 	          <img src="imagens/logo-terroa.svg">
- 	 	 	 	     </a>
- 	 	 	 	     <div class="pontdes">
- 	 	 	 	         <p>CRECI: J23369</p>
- 	 	 	 	     </div>
- 	 	 	 	 </div>
-
- 	 	 	 	 <div class="contato-resp">
- 	 	 	 	 	 <div class="cel-resp">
- 	 	 	 	 	     <img src="imagens/whats.png" alt="WhatsApp">
- 	 	 	 	 	     <p>(19) 99870-1675</p>
- 	 	 	 	     </div>
-
- 	 	 	 	 	 <div class="telefone-resp">
- 	 	 	 	 	     <img src="imagens/phone.png" alt="Telefone">
- 	 	 	 	 	     <p>(19) 3896-1198</p>
- 	 	 	 	     </div>	 	 	 	     
- 	 	 	 	 </div>
-
- 	 	 	 	 <div class="incorporacao-resp">
- 	 	 	 	 	 <p>Incorporação registrada no R. 00, da Matrícula nº 0.000, do Oficial Registro de Imóveis da Comarca de Pedreira-SP.</p>
- 	 	 	 	     <p class="p1i">Projeto aprovado pela Prefeitura Municipal de Pedreira sob nº 000/2017. </p>
- 	 	 	 	     <p class="p2i">Aprovado no GRAPROHAB, Certificado n. 160/2017.</p>
- 	 	 	 	 </div>
-
- 	 	 	 	 <div class="copyright-resp">
- 	 	 	 	 	 <p>2018 - Condomínio Nova Itália - Todos os direitos reservados</p>
- 	 	 	 	 </div>
- 	 	 	 </div>
- 	 	 </div>
- 	 	 
-
- 	 	 <div class="normal">
- 	 	     <div class="container">
- 	 	 	     <!--Assinatura-->
- 	 	 	     <div class="row">
- 	 	 	         <div class="col-sm-3">
- 	 	 	             <div class="realizacao">
- 	 	 	 	             <h2>Realização</h2>
- 	 	 	 	             <a href="http://www.terroaempreendimentos.com.br">
- 	 	 	 	                 <img src="imagens/logo-terroa.svg">
- 	 	 	 	             </a>
- 	 	 	 	             <p>CRECI: J23369</p>
- 	 	 	             </div>
- 	 	 	         </div>
- 	 	 	     </div>
-
- 	 	 	     <div class="infotercom">
- 	 	 	         <!--Telefones de contato-->
- 	 	 	         <div class="row">
- 	 	 	 	         <div class="col-sm-8">
- 	 	 	                 <div class="contato">
- 	 	 	 	                 <div class="telefone">
- 	 	 	 	 	                 <img src="imagens/phone.png" alt="Telefone">
- 	 	 	 	 	                 <p>(19) 3896-1198</p>
- 	 	 	 	                 </div>
-
- 	 	 	 	                 <div class="cel">
- 	 	 	 	 	                 <img src="imagens/whats.png" alt="WhatsApp">
- 	 	 	 	 	                 <p>(19) 99870-1675</p>
- 	 	 	 	                 </div>
- 	 	 	                 </div>
- 	 	 	             </div>
- 	 	 	         </div>
-
- 	 	 	         <!--Registro de incorporação-->
- 	 	 	         <div class="incorporacao">
- 	 	 	 	         <p>Incorporação registrada no R. 00, da Matrícula nº 0.000, do Oficial Registro de Imóveis da Comarca de Pedreira-SP.</p>
- 	 	 	 	         <p>Projeto aprovado pela Prefeitura Municipal de Pedreira sob nº 000/2017. </p>
- 	 	 	 	         <p>Aprovado no GRAPROHAB, Certificado n. 160/2017.</p>
- 	 	 	         </div>
-
- 	 	 	         <!--Direitos Autorais-->
- 	 	 	         <div class="copyright">
- 	 	 	 	         <p>2018 - Condomínio Nova Itália - Todos os direitos reservados</p>
- 	 	 	         </div>
- 	 	 	     </div>
- 	 	     </div>
- 	 	 </div>
- 	 </footer>
- </main>
-</body>
-</html>
