@@ -18,12 +18,10 @@
 	 <meta property="og:type" content="website">
      <meta property="og:title" content="Condomínio Nova Itália">
      <meta property="og:description" content="Condomínio clássico e moderno ao mesmo tempo, localizado na cidade de Pedreira-SP, contanto com uma localização privilegiada, segurança e tudo que você deseja para poder viver bem.">
-     <meta property="og:image" content="www.novaitalia.com.br/novaitalia.png">
      <meta property="og:locale" content="pt_br">
      <meta name="twitter:title" content="Condomínio Nova Itália">
      <meta name="twitter:csite" content="@terroaemp">
      <meta name="twitter:card" content="summary">
-     <meta name="twitter:image" content="www.novaitalia.com.br/novaitaliatwit.png">
      <meta name="twitter:description" content="Condomínio clássico e moderno ao mesmo tempo, localizado na cidade de Pedreira-SP, contanto com uma localização privilegiada, segurança e tudo que você deseja para poder viver bem.">
 	 <meta name="viewport" content="width=device-width,initial-scale=1">
 	 <link rel=”canonical” href=”http://www.novaitalia.com.br”>

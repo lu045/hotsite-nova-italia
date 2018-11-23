@@ -1,6 +1,10 @@
 <?php 
+	/*
+	   template name: Inicio
+	*/
+	   
 	//Chama o cabeçalho da pagina
-	include('header.php');
+	get_header();
 
 	//Chama a sessao condominio
 	include('includes/organism/condominio.php');
@@ -21,7 +25,7 @@
 	include('includes/organism/info.php');
 
 	//Chama o rodape da pagina
-	include('footer.php');
+	get_footer();
 ?>
 
 	 

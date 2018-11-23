@@ -1,23 +1,32 @@
 <section class="condominio" id="condominio">
- <div class="cb1">
- 	 <div class="container">
- 	 	 <h1>O Condomínio</h1>	 	 	     
- 	 </div>
- </div>
+ <?php query_posts('post_type=condominio'); ?>
+ 	 <?php if(have_posts()): ?>	
+ 	 	 <?php while(have_posts()): the_post(); ?>
+			  <div class="cb1">
+ 	             <div class="container">
+ 	 	             <h1><?php the_title(); ?></h1>	 	 	     
+ 	             </div>
+             </div>
 
- <div class="conteudo-geral">
- 	 <div class="container">
- 	 	 <div class="condominio-desc">	 	            
- 	 	     <div class="vl">
- 	 	 	     <div class="normal">
- 	 	 	         <iframe src="https://www.youtube.com/embed/eqke0GacFDY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>	
- 	 	 	     </div>
- 	 	 	 </div>
- 	 	     <article>
- 	 	 	     <h1>Piacere de Vivere Qui</h1>
- 	 	 	     <p>Conheça o Condomínio Nova Itália, um lugar clássico e moderno ao mesmo tempo, a onde todas as tradições típicas da cultura italiana se encontram em um espaço aconchegante, preparado para que você e sua família possam ter cada vez mais tranquilidade, comodidade e segurança.</p>	 	 	
- 	 	     </article>	 	             
- 	 	 </div>
+             <div class="conteudo-geral">
+ 	             <div class="container">	 	 
+ 	 	             <div class="condominio-desc">	 	            
+ 	 	                 <div class="vl">
+ 	 	 	                 <div class="normal">
+ 	 	 	                     <?php the_field('video'); ?>	
+ 	 	 	                 </div>
+ 	 	 	             </div>
+ 	 	                 <article>
+ 	 	 	                 <h1><?php the_field('titulo'); ?></h1>
+ 	 	 	                 <p><?php the_field('texto'); ?></p>	 	 	
+ 	 	                 </article>	 	             
+ 	 	             </div>	 	     	 
+ 	 	 <?php endwhile; ?>
+     <?php else: ?>
+         Não tem nada cadastrado 
+ 	 <?php endif; ?>
+ <?php wp_reset_query(); ?>
+
 
  	 	 <div class="atributos-emp">
  	 	     <div class="row">
