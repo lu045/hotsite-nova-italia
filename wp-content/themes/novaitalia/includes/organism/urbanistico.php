@@ -1,16 +1,25 @@
 <div class="altura-geral">
  <section class="urbanistico" id="urbanistico">
- 	 <div class="cb2">
- 	 	 <div class="container">
- 	 	 	 <h1>Urbanistico</h1>
- 	 	 </div>
- 	 </div>
+ 	 <?php query_posts('post_type=urbanistico'); ?>
+		 <?php if(have_posts()): ?>	
+             <?php while(have_posts()): the_post(); ?>
+                 <div class="cb2">
+ 	 	             <div class="container">
+ 	 	 	             <h1><?php the_title(); ?></h1>
+ 	 	             </div>
+ 	             </div>
 
- 	 <div class="conturb">
- 	 	 <a href="imagens/urbanistico-nova-italia.png" target="_blank">
- 	 	     <img src="<?php bloginfo('template_url'); ?>/imagens/urbanistico.png" class="urbimg" alt="Projeto urbanistico">
- 	 	 </a>
- 	 </div>
+ 	             <div class="conturb">
+ 	 	             <a href="imagens/urbanistico-nova-italia.png" target="_blank">
+ 	 	             <img src="<?php the_post_thumbnail_url(); ?>" class="urbimg" alt="<?php the_title(); ?>">
+ 	 	         </a>
+ 	             </div>
+             <?php endwhile; ?>
+         <?php else: ?>
+         	 <h1>Não tem nada para exibir</h1>
+          <?php endif; ?>
+ 	 <?php wp_reset_query(); ?>
+ 	 
 
  	 <div class="container">	 	    
  	 	 <div class="esp-emp">

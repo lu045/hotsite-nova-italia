@@ -61,7 +61,7 @@
  	 	 	 	             </div>
 
  	 	 	 	             <div class="cel">
- 	 	 	 	 	             <img src="imagens/whats.png" alt="WhatsApp">
+ 	 	 	 	 	             <img src="<?php bloginfo('template_url'); ?>/imagens/whats.png" alt="WhatsApp">
  	 	 	 	 	             <p>(19) 99870-1675</p>
  	 	 	 	             </div>
  	 	 	             </div>

@@ -23,7 +23,7 @@
  	 	             </div>	 	     	 
  	 	 <?php endwhile; ?>
      <?php else: ?>
-         Não tem nada cadastrado 
+         <h1>Não tem nada para exibir</h1>
  	 <?php endif; ?>
  <?php wp_reset_query(); ?>
 

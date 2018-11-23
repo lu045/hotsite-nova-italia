@@ -1,11 +1,19 @@
 <section class="informacoes">
  <div class="leeds">
  	 <div class="conteudo-final">
- 	 	 <div class="container">
- 	 	 	 <h1>Moderno e classico ao mesmo tempo, assim é o Condomínio Nova Itália</h1>
- 	 	 	 <div class="lazer-area"><i class="far fa-image"></i></div>
- 	 	 	 <p>Venha morar com mais segurança e qualidade de vida, venha para o Condomínio Nova Itália, o mais novo lançamento da Terroá Empreendimentos.</p>
- 	 	 </div>
+ 	 	 <?php query_posts('post_type=info'); ?>
+ 	 	 	 <?php if(have_posts()): ?>
+ 	 	 	 	 <?php while(have_posts()): the_post(); ?>
+ 	 	 	 	 	 <div class="container">
+ 	 	 	             <h1><?php the_title();?></h1>
+ 	 	 	             <div class="lazer-area"><img src="<?php the_post_thumbnail_url();?>"></div>
+ 	 	 	             <p><?php the_content();?></p>
+ 	 	              </div>
+ 	 	 	 	 <?php endwhile; ?>
+ 	 	 	 <?php else: ?>
+ 	 	 	 	 <h1>Não tem nada para mostrar!</h1>
+ 	 	 	 <?php endif; ?>
+ 	 	 <?php wp_reset_query(); ?> 	 	 
  	 </div>
  </div>
 
