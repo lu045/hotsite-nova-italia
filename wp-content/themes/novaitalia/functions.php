@@ -14,7 +14,7 @@
 				'public' => true,
 				'has_archive' => true,
 				'menu_icon' => 'dashicons-admin-home', 
-				'supports' => array('title', 'page-attributes'),
+				'supports' => array('title', 'editor', 'page-attributes'),
 			) 
 		);
 
@@ -50,7 +50,8 @@
 		register_post_type('geleria',
 			array(
 				'labels' =>  array(
-				  'name' => __('Galeria de Imagens'), 
+				  'name' => __('Galeria de Imagens'),
+				  'singluar_name' => __('galeria'), 
 				),
 
 				'public' => true,

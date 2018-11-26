@@ -18,7 +18,7 @@
  	 	 	             </div>
  	 	                 <article>
  	 	 	                 <h1><?php the_field('titulo'); ?></h1>
- 	 	 	                 <p><?php the_field('texto'); ?></p>	 	 	
+ 	 	 	                 <p><?php the_content();?></p>	 	 	
  	 	                 </article>	 	             
  	 	             </div>	 	     	 
  	 	 <?php endwhile; ?>
